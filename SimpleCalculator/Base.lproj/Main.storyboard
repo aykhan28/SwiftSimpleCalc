@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SimpleCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <color key="backgroundColor" red="0.1" green="0.1" blue="0.3" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <textField opaque="NO" borderStyle="roundedRect" placeholder="First number..." translatesAutoresizingMaskIntoConstraints="NO" id="LMS-QV-JA8">
+                                <rect key="frame" x="38" y="150" width="339" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </textField>
+                            <textField opaque="NO" borderStyle="roundedRect" placeholder="Second number..." translatesAutoresizingMaskIntoConstraints="NO" id="MlZ-fp-pT1">
+                                <rect key="frame" x="38" y="220" width="339" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </textField>
+                            <label opaque="NO" text="Result: " textAlignment="center" fontDescription="boldSystem" pointSize="20" textColor="white" translatesAutoresizingMaskIntoConstraints="NO" id="VdA-6a-oL4">
+                                <rect key="frame" x="43" y="360" width="334" height="30"/>
+                            </label>
+                            <stackView opaque="NO" spacing="20" axis="horizontal" translatesAutoresizingMaskIntoConstraints="NO" id="6cg-HP-WIy">
+                                <rect key="frame" x="72" y="290" width="270" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" buttonType="system" title="+" fontDescription="boldSystem" pointSize="22" backgroundColor="blue" textColor="white" cornerRadius="10" id="q8P-mM-g6R"/>
+                                    <button opaque="NO" buttonType="system" title="-" fontDescription="boldSystem" pointSize="22" backgroundColor="red" textColor="white" cornerRadius="10" id="IMI-Nf-afa"/>
+                                    <button opaque="NO" buttonType="system" title="×" fontDescription="boldSystem" pointSize="22" backgroundColor="green" textColor="white" cornerRadius="10" id="j3D-Ge-qwZ"/>
+                                    <button opaque="NO" buttonType="system" title="÷" fontDescription="boldSystem" pointSize="22" backgroundColor="orange" textColor="white" cornerRadius="10" id="gVb-JB-rMf"/>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </view>
+                </viewController>
+            </objects>
+        </scene>
+    </scenes>
+</document>
